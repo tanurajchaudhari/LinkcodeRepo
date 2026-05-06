@@ -13,15 +13,17 @@ public class Second {
 	}
 	
 	int calculateFib(int x){
-		if(x==0) return 0;
-		if(x==1)return 1;
+		if(x==1) return 0;
+		if(x==2)return 1;
 		int a=0;int b=1;
+		
 		for(int i=3;i<=x;i++) {
+			System.err.println("loop "+ i);
+			
 			int c=a+b;
 			a=b;b=c;
+			System.err.println(c);
 		}
-		
-		
 		return b;
 	} 
 	
@@ -34,7 +36,7 @@ public class Second {
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	    System.out.println("Enter the position to find the fibonacci   element");
 	    int x=Integer.parseInt(br.readLine());
-	    System.out.println("Fibnoacci number at position  "+x+"is :- "+sc.calculateFib(4));
+	    System.out.println("Fibnoacci number at position  "+x+" is :- "+sc.calculateFib(x));
 		
 		
 		}

@@ -6,10 +6,6 @@ import java.io.InputStreamReader;
 
 public class Calculator {
 	
-	
-	
-	
-	
 	public static void main(String []args)throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -52,9 +48,6 @@ public class Calculator {
 				int ele=Integer.parseInt(br.readLine());
 				x=x%ele;
 			}
-			
-			
-			
 		}
 		System.out.println("Answer is :- "+ x);
 	}
