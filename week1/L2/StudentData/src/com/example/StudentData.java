@@ -162,6 +162,11 @@ public class StudentData<T> extends ArrayList<T> {
 		}
 	}
 	public void showStudents(ArrayList<Student>al) {
+		if(al.isEmpty()) {
+			System.out.println("List is empty");
+			return;
+		}
+		
 		System.out.println("Elements in the student list");
 		for(Student s:al) {
 			System.out.println("Student RollNo : "+s.getRollNo());
